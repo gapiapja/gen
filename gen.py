@@ -4,12 +4,12 @@ import os
 import time
 import requests
 
-ppkeys = requests.get('https://gitlab.com/Misaka-blog/warp-script/-/raw/main/files/24pbgen/base_keys')
+ppkeys = requests.get('https://raw.githubusercontent.com/gapiapja/gen/main/key.txt')
 pkeys = ppkeys.content.decode('UTF8')
 keys = pkeys.split(',')
 gkeys = []
 
-value_int = int(input("请输入你需要生成的 WARP+ 密钥数量：\n> "))
+value_int = int(input("WARP+ Generator \nCredit : Mikasa & Gapiapja \nMasukkan jumlah akun WARP+ yang ingin dibuat：\n> "))
 a = 0
 
 while a < value_int:
@@ -73,8 +73,7 @@ while a < value_int:
     time.sleep(60)
 
 os.system('cls' if os.name == 'nt' else 'clear')
-print("下方为生成的密钥列表，请复制粘贴备用！")
-print("更多内容，请关注：小御坂的破站")
+print("Di bawah ini adalah daftar kunci yang dihasilkan, silakan salin dan tempel untuk digunakan nanti!")
 for x in gkeys:
   print(x)
 
