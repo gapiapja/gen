@@ -1,0 +1,8 @@
+{
+    "name": "heca",
+    "description": "Updating the Cloudstream Indonesian Provider. Feel free to join the Cloudstream Discord server for the latest information.",
+    "manifestVersion": 1,
+    "pluginLists": [
+      "https://raw.githubusercontent.com/hexated/cloudstream-extensions-hexated/refs/heads/builds/plugins.json"
+    ]
+  }
